@@ -63,7 +63,7 @@ export default {
 }
 
 .nft-item-container {
-    background-color: rgb(238, 238, 238);
+    background-color: #818181;
     width: 20vw;
     padding: 20px;
     border-radius: 20px;

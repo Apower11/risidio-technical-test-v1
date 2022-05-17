@@ -55,8 +55,8 @@ export default {
       panel1Selected: true,
       panel2Selected: false,
       selectedPanelStyle: {
-        color: "rgb(72, 202, 245)",
-        borderBottom: "1px solid rgb(72, 202, 245)"
+        color: "#50B1B5",
+        borderBottom: "1px solid #50B1B5"
       }
     }
   },
@@ -135,7 +135,7 @@ body {
 
 .read-more-button {
   background: none;
-  color: rgb(72, 202, 245);
+  color: #50B1B5;
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -145,7 +145,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(238, 238, 238);
+  background-color: #F9F9F9;
   border-radius: 50px;
   width: 60%;
   height: 100px;
