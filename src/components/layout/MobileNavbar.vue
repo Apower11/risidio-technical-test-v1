@@ -35,7 +35,7 @@
             <li class="mobile-nav-item" > About Risidio </li>
             <br />
             <br />
-            <li class="mobile-nav-item mobile-nav-button violet-button" > Register with Hiro Wallet </li>
+            <li class="mobile-nav-item mobile-nav-button violet-button" > <b>Register with Hiro Wallet</b> </li>
         </ul>
     </div>
     </div>
@@ -152,7 +152,8 @@ hr {
 }
 
 .wallet-register-button {
-    background-color: rgba(violet, 0.2);
+    background-color: rgba(256, 256, 256, 0.12);
+    color: #5FBDC1;
     border-radius: 20px;
     width: 150px;
     height: 40px;

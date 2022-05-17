@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item right"> How It Works</li>
                 <li class="nav-item"> About Risidio</li>
-                <li class="nav-item violet-button"> My NFTs</li>
+                <li class="nav-item navbar-button violet-button"> My NFTs</li>
             </ul>
          </div>
     </div>
@@ -72,6 +72,11 @@ export default {
   -ms-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+.navbar-button {
+  background-color: rgba(256,256,256, 0.1);
+  color: #5FBDC1 !important;
 }
 
 .container {

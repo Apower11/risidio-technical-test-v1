@@ -120,6 +120,7 @@ body {
 .artist-avatar {
   height: 70px;
   width: 70px;
+  border: 1px solid white;
   border-radius: 70px;
   background-image: url("../../assets/nft-collection-avatar-1.jpg");
   background-size: contain;

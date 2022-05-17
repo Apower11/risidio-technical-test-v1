@@ -39,6 +39,7 @@ export default {
         margin-left: 100px;
         text-decoration: none;
         background-color: #dff8f8;
+        background-color: rgba(80, 177, 181, 0.1);
         color: #5FBDC1;
         padding: 20px 60px;
         border-radius: 40px;

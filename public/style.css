@@ -16,7 +16,8 @@
 }
 
 .my-nfts-button {
-  background-color: rgba(238, 130, 238, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #5FBDC1 !important;
   border-radius: 20px;
   width: 150px;
   height: 40px;
