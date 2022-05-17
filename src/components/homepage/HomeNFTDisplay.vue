@@ -1,10 +1,11 @@
 <template>
 <!-- We would like you to render 12 NFTs in the desktop full width view, but limit it to 3 NFTs if mobile width (examples in the design)-->
 <!-- Here you will see conditional rendering separating between mobile Nfts and normal. You may use your own logic for displaying the nfts between the mobile view and desktop-->
-    <div>
-        <div v-if="mobileNFTs && mobileNFTs.length > 0">
+    <div class="home-nft-display-container">
+        <div class="nft-item-list" v-if="mobileNFTs && mobileNFTs.length > 0">
             <div v-for="(item, index) in mobileNFTs" :key="index"> <!--This will loop through all the items in mobileNFTs Array-->
             <!--Display and style as appropriate-->
+              <NFTItem :data="item" />
             </div>
         </div>
         <div v-else>
@@ -17,11 +18,23 @@
 </template>
 
 <script>
+import NFTItem from './NFTItem.vue';
+
 export default {
   name: 'Home-NFT-Display',
   data() {
     return{
-      mobileNFTs: [] // You may use this to display limited NFTs
+      mobileNFTs: [
+        {name: 'Squirtle Sniffing Flower', artist: 'John Smith', priceInSTX: 40, priceInDollars: 57, image: './nft-images/pokemon-nft-1.webp'},
+        {name: 'Holographic Pikachu', artist: 'Bull Basoar', priceInSTX: 46, priceInDollars: 55, image: './nft-images/pokemon-nft-2.jpg'},
+        {name: 'Pixel Art Charmander', artist: 'Bill Board', priceInSTX: 20, priceInDollars: 27, image: './nft-images/pokemon-nft-3.png'},
+        {name: 'Bored Infernape', artist: 'Cynthia', priceInSTX: 100, priceInDollars: 115, image: './nft-images/pokemon-nft-4.webp'},
+        {name: 'Floating Mew', artist: 'Professor Oak', priceInSTX: 60, priceInDollars: 68, image: './nft-images/pokemon-nft-5.webp'},
+        {name: 'Rainbow Minecraft Pikachu', artist: 'Herobrine', priceInSTX: 30, priceInDollars: 38, image: './nft-images/pokemon-nft-6.jpg'},
+        {name: 'Pretty Pokeball', artist: 'Jane Smith', priceInSTX: 70, priceInDollars: 82, image: './nft-images/pokemon-nft-7.gif'},
+        {name: 'Weedle', artist: 'Bug Catcher Joe', priceInSTX: 10, priceInDollars: 15, image: './nft-images/pokemon-nft-8.jpg'},
+        {name: 'Mewtwo Cool Art', artist: 'Giovanni', priceInSTX: 50, priceInDollars: 61, image: './nft-images/pokemon-nft-9.jpg'},
+        ] // You may use this to display limited NFTs
     }
   },
   mounted () {
@@ -54,10 +67,37 @@ export default {
        */
       return NFTs
     }
-}
+},
+components: {
+      NFTItem
+    }
 }
 </script>
 
 <style scoped>
+.nft-item-list {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
 
+@media(max-width: 900px){
+  .nft-item-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 650px){
+  .nft-item-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-nft-display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 </style>
