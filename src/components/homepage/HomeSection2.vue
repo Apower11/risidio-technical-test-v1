@@ -53,10 +53,11 @@ export default {
         .buttons {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
-        .buttons button {
-            width: 60%;
+        .buttons a {
+            width: 25%;
         }
 
         .go-to-top-button {
