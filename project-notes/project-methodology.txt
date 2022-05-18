@@ -1,0 +1,37 @@
+My approach and methodology to this product:
+
+The way I completed this project was by completing one main component
+at a time.
+
+For example, I focused on the navbar first. Within that Navbar, I first focused
+on implementing the links and dropdown link. Then I focused on making the mobile
+navbar to make it fully responsive.
+
+Then, once the Navbar was done I focused on the collections page layout. I did
+HomeSection1.vue first of all to have the banner, artist avatar, name, descriptions
+of the collection and the key numbers. Then I focused on making sure it was mobile
+responsive and responsive on any device.
+
+Then, I designed a single NFTItem box. Then, once I completed that design and
+made it mobile responsive I began to input data for more NFTs so more of these item
+boxes would be created. I displayed them in grid format and made sure they were 
+responsive on any device.
+
+Then I implemented the second Home Section called HomeSection2.vue which 
+included a message saying that the user has seen the collection and has 2
+buttons one for gallery and one for go back to the top. Both will take
+you back to the top of the page. Then, I focused on making it responsive
+on any device.
+
+Then, I tested my project thoroughly and made sure everything worked and
+I added some finishing touches like introducing a transition for the mobile navbar.
+
+Then, I commented my code explaining it and cleaned up my code while
+I was doing it.
+
+While I was adding some finishing touches and getting towards the end of the project,
+I made consistent pushes to Github in case any of the changes afterwards went wrong and
+I wanted to go back to a previous version. It also helped in keeping track of the
+progress of my project.
+
+Then, once I was happy with what I had, I pushed that to Github and finished the project.

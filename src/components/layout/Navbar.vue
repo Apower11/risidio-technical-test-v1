@@ -1,6 +1,11 @@
 <!-- You may notice this navbar is not responsive-->
 <!-- We would like you to style it so it is responsive-->
 <!-- You do not need to make the dropdown menu on the "Featured Collections" -->
+
+<!-- This is the Navbar which contains the desktop and mobile navbar and the one shown depends
+on the size of the screen and whether the hamburger button shown on smaller screens is clicked.
+It uses transitions to make the switch between the desktop and mobile navbar smoother.  -->
+
 <template>
 <div class="container">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
@@ -9,7 +14,7 @@
         <div class="navbar_container">
             <img class="nav_banner" src="https://res.cloudinary.com/risidio/image/upload/v1633609222/RisidioMarketplace/gradienta-m_-1_v4hs5p.svg" alt="">
         </div>
-         <div class = "mainNavbar">
+        <div class = "mainNavbar">
             <ul class="main-navbar-items">
             <div class="site-logo">
               <img :src="logo" alt="risidio-logo"/>
@@ -46,12 +51,16 @@
 
 <script>
 
+// This is the data, methods, and imported components. This includes the
+// Risidio logo, boolean value for hamburgerButtonClicked which determines
+// whether to show the full mobile navbar menu or not. It also imports the
+// MobileNavbar component to be displayed if the hamburger button is clicked.
+
 import MobileNavbar from "./MobileNavbar.vue";
 
 export default {
   data () {
     return{
-      count: 0,
       hamburgerButtonClicked: false,
       logo: 'https://res.cloudinary.com/risidio/image/upload/v1633609248/RisidioMarketplace/Group_-1_fgpanq.svg',
     }
@@ -68,14 +77,6 @@ export default {
 </script>
 
 <style scoped>
-/* .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
-} */
-
 .navbar-button {
   background-color: rgba(256,256,256, 0.1);
   color: #5FBDC1 !important;
@@ -120,7 +121,19 @@ export default {
   z-index: -11;
 }
 
+/*
+
+CSS file compiled from scss file to implement other styles.
+
+*/
+
 @import '../../assets/style.css';
+
+/*
+
+Styles for transitions
+
+*/
 
 .fade-enter-active {
   transition: opacity 0.5s ease;

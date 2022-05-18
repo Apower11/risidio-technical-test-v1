@@ -1,3 +1,6 @@
+<!-- This is the component for a single NFT item which is a box containing the image
+and the details of the NFT  -->
+
 <template>
     <div class="nft-item-container">
         <img class="nft-item-image" :src="item.image" alt="" />
@@ -15,14 +18,15 @@
 </template>
 
 <script>
+// This component inherits data from the parent component HomeNFTDisplay
+// and the data it inherits is that of an NFT item. It inherits it's item
+// path, name, artist name, price in STX and price in dollars.
+
 export default {
     props: ['data'],
     data() {
         return {
-            item: this.data,
-            NFTImageStyle: {
-                backgroundImage: `url(${this.data.image})`,
-            }
+            item: this.data
         }
     },
 }
@@ -76,6 +80,7 @@ export default {
 
 .nft-item-container:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s ease-in-out all;
 }
 
 @media(max-width: 900px){

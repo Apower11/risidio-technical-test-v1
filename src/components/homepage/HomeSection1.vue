@@ -1,5 +1,11 @@
+<!-- This is the first main section of the homepage. It contains the name,
+descriptions, artist, and key numbers of the collection. It also has a tabbed panel
+which determines whether to show the items in the collection or the activity of which
+there is none at the moment.  -->
+
 <template>
-  <div class="collection-banner">
+  <div class="section-1-container">
+    <div class="collection-banner">
     <h2>Pokemon Collection</h2>
   </div>
   <div class="collection-banner-placeholder"></div>
@@ -45,9 +51,17 @@
       <div @click="selectTabbedPanelOption2" :style="panel2Selected ? selectedPanelStyle : null" class="option"><b>Activity</b></div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
+
+// Here I've used v-if attributes, data, and methods to implement the
+// read more feature as well as the tabbed panel which determines whether
+// the collection activities of NFTs are displayed. This is achieved through
+// the emit keyword which emits a word onto the parent component which that parent
+// component than acts on by activating a certain one of it's methods.
+
 export default {
   data(){
     return {

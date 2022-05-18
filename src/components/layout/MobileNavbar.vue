@@ -1,3 +1,7 @@
+<!-- This is the mobile navbar component which is shown when the screen
+is small enough and the hamburger button on the smaller screen is clicked.  
+-->
+
 <template class="mobile-navbar-template">
     
         <div v-if="showMobileNavbar" class="mobile-navbar-container">

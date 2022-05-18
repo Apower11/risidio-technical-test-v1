@@ -1,3 +1,6 @@
+<!-- This is the section of the homepage which displays all the NFTs of the collection
+in the form of a grid of NFTItem components.  -->
+
 <template>
 <!-- We would like you to render 12 NFTs in the desktop full width view, but limit it to 3 NFTs if mobile width (examples in the design)-->
 <!-- Here you will see conditional rendering separating between mobile Nfts and normal. You may use your own logic for displaying the nfts between the mobile view and desktop-->
@@ -18,6 +21,13 @@
 </template>
 
 <script>
+// This component imports the NFTItem component which is used to display
+// the NFT data in the collection. It displays the NFT items in a grid
+// format which is responsive to any screen size and will display less
+// NFTs on each row when the screen gets thinner. It also stores the NFT
+// data in the mobileNFTs array which contain each NFT as an object containing
+// the key information about the NFT.
+
 import NFTItem from './NFTItem.vue';
 
 export default {

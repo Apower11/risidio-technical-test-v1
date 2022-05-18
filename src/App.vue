@@ -1,17 +1,20 @@
+<!-- This is the main App.vue file which contains the Navbar and router-view 
+component and the router-view component determines which component within the router
+it should display to the user -->
+
 <template>
-  <Navbar/>
+  <div class="app-container">
+    <Navbar/>
     <router-view/>
-  <Footer/> <!--You do not need to worry about the footer for this technical test. You can remove it if you'd like-->
+  </div>
 </template>
 
 <script>
-import Footer from '@/components/layout/Footer.vue'
 import Navbar from '@/components/layout/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
-    Footer,
     Navbar
   }
 }

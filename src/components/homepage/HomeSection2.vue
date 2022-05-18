@@ -1,15 +1,20 @@
-<template>
-    <h1 class="section-2-heading">You've seen the Pokemon Collection</h1>
-    <br />
-    <br />
-    <div class="buttons">
-        <a href="#" class="gallery-button"><b>Gallery</b></a>
-        <a href="#" class="go-to-top-button"><b>Go Back To Top</b></a>
-    </div>
-    <br />
-    <br />
-    <br />
+<!-- This is section after the NFT display on the homepage which contains
+the message telling the user they've seen the collection along with two
+buttons both of which take the user back to the top of the page.  -->
 
+<template>
+    <div class="section-2-container">
+        <h1 class="section-2-heading">You've seen the Pokemon Collection</h1>
+        <br />
+        <br />
+        <div class="buttons">
+            <a href="#" class="gallery-button"><b>Gallery</b></a>
+            <a href="#" class="go-to-top-button"><b>Go Back To Top</b></a>
+        </div>
+        <br />
+        <br />
+        <br />
+    </div>
 </template>
 
 <script>

@@ -64,6 +64,12 @@
     background-color: #ccc;
 }
 
+.collections-nav-item {
+    i {
+        color: #5FBDC1;
+    }
+}
+
 .collections-nav-item:hover {
     .collections-dropdown-menu {
         display: block;
