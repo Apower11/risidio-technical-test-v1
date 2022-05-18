@@ -1,7 +1,6 @@
 <template class="mobile-navbar-template">
     
-    <Transition name="fade">
-        <div class="mobile-navbar-container">
+        <div v-if="showMobileNavbar" class="mobile-navbar-container">
         <div class="navbar_container">
         <img class="nav_banner" src="https://res.cloudinary.com/risidio/image/upload/v1633609222/RisidioMarketplace/gradienta-m_-1_v4hs5p.svg" alt="">
         </div>
@@ -39,13 +38,13 @@
         </ul>
     </div>
     </div>
-    </Transition>
 </template>
 
 <script>
 export default {
     data () {
         return{
+            showMobileNavbar: true,
             logo: 'https://res.cloudinary.com/risidio/image/upload/v1633609248/RisidioMarketplace/Group_-1_fgpanq.svg',
         }
     },
